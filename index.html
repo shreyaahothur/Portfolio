@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("download.jpg");
+  min-height: 100%;
+}
+.bgimg-2 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-2 {
+  background-image: url("leafy-freshness-a-vibrant-plant-composition-for-design-project-plant-background-photo.jpeg");
+  min-height: 70%;
+}
+.bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-3 {
+  background-image: url("dd.jpg");
+  min-height: 40%;
+}
+.caption {
+  position: absolute;
+  left: 10%;
+  right:10%;
+  top: 0%;
+  width: 90%;
+  text-align: left;
+}
+
+span.border {
+  color: #9baf59;
+  padding: 18px;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px ,"Lato", sans-serif;
+  color: #111;
+  
+}
+ .caption .border{
+     font-size: 160px;
+     color: #58806d;
+     font-weight: 600;
+     transition: 0.5s;
+
+ }
+ .caption .border:hover{
+     -webkit-text-stroke: 2px #fff;
+     color: transparent;
+
+ }
+ .container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.box {
+  width: 400px;
+  height: 100px;
+  background-color: #58806d;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+.box:hover {
+  background-color: #3e4720;
+  transform: scale(1.05); /* Grow by 5% when hovered */
+}
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block; /* Changed to inline-block */
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color:transparent;
+}
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.box1 {
+  
+  position: relative; /* Add relative positioning */
+  width: 400px;
+  height: 150px;
+  background-color: #58806d;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.box1:hover {
+  width: 350px;
+  height: 250px;
+  text-align: center;
+
+  background-color: #3e4720;
+
+}
+
+.box1:hover h2 {
+  display: none; /* Hide heading when box is hovered over */
+}
+
+.box1 h2 {
+  margin: 0;
+  padding-top:30px;
+  font-size: 25px;
+}
+
+.box1 .info {
+  display: none;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    text-align: left;
+
+}
+
+
+.box1:hover .info {
+  display: block;
+  text-align: left;
+
+}
+.c2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.b2 {
+  width: 300px;
+  background-color: #58806d;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+
+  transition: transform 0.2s ease;
+}
+
+.b2:hover {
+  background-color: #3e4720;
+
+  transform: scale(1.05);
+   /* Slightly enlarges the box on hover */
+}
+
+.b2 img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.b2 .description {
+  padding: 10px;
+}
+
+.b2 h2 {
+  margin: 0;
+  font-size: 18px;
+  transition: font-size 0.3s ease; /* Smooth transition for font size */
+}
+
+.b2:hover h2 {
+  font-size: 20px; /* Enlarges the heading on hover */
+}
+
+.icon {
+  width: 30px; /* Set width */
+  height: 20px; /* Set height */
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact ul li {
+  margin-bottom: 5px;
+}/* Style for the contact button */
+#contactButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Style for the contact form */
+#contactForm {
+  text-align: center;
+  display: none;
+  margin-top: 20px;
+}
+
+/* Style for the text fields */
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for the send button */
+#sendMessageButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#sendMessageButton:hover {
+  background-color: #45a049;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+</style>
+<script>
+  function redirectToWebsite1() {
+  window.location.href = "https://github.com/dashboard"; // Replace "https://example.com" with the URL of the website you want to redirect to
+}
+function redirectToWebsite2() {
+  window.location.href = "https://www.linkedin.com/in/shreyaa-h-832749262/"; // Replace "https://example.com" with the URL of the website you want to redirect to
+}
+function redirectToWebsite3() {
+  window.location.href = "Shreyaa.pdf"; // Replace "path/to/your/pdf/file.pdf" with the actual path to your PDF file
+}
+
+function sendMessage() {
+  var phone = document.getElementById('phone').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+
+  // Replace the following line with code to send the message to the owner
+  console.log("Sending message:", message);
+
+  // Show alert to the user
+  alert('Message sent successfully!');
+
+  // Clear input fields
+  document.getElementById('phone').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('message').value = '';
+
+  // Hide the contact form
+  document.getElementById('contactForm').style.display = 'none';
+}
+function showContactForm() {
+  var contactForm = document.getElementById('contactForm');
+  contactForm.style.display = 'block';
+}
+
+function sendMessage() {
+  var message = document.getElementById('message').value;
+  // Replace the following line with code to send the message to the owner
+  console.log("Sending message:", message);
+  alert('Message sent successfully!'); // Show an alert to the user
+  document.getElementById('message').value = ''; // Clear the textarea
+}
+
+
+
+</script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#aboutme">About me</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border"> <p id="changingText"></p>
+
+    <script>
+      var changingText = document.getElementById('changingText');
+      var texts = ["Hi,", "I'm Shreyaa","Bonjour,","Je suis Shreyaa", "¡Hola!,","Soy Shreyaa", "Certo,","Sono Shreyaa"]; // Array of texts to cycle through
+      var index = 0; // Initial index
+    
+      setInterval(function() {
+        changingText.textContent = texts[index]; // Set text content to current index
+        index = (index + 1) % texts.length; // Increment index and loop back to 0 when it reaches the end
+      }, 1000); // Change text every second (1000 milliseconds)
+    </script></span>
+  </div>
+</div>
+
+<div id="aboutme" style="color: #000;
+     background-color:white;
+		 text-align:center;
+		 padding:50px 80px;
+		 text-align: justify;
+     font-size:30px">
+  <h3 style="text-align:center;">I'm a </h3>
+  <h1 style="text-align:center;">Web Developer</h1>
+  <p>I love designing and building beautiful and highly functional applications.
+    I am a self-taught developer and I am always looking for new opportunities to learn and grow.
+    Love bringing ideas to life through code and design. Let's create something extraordinary together!</p>
+  <p>
+   
+    <div class="container" id="resume">
+      <div class="box" onclick="redirectToWebsite3()">
+        Resume
+      </div>
+      <div class="box" onclick="redirectToWebsite1()">
+        Github
+      </div>
+      <div class="box" onclick="redirectToWebsite2()">
+        linkedin
+      </div>
+    </div>
+        
+  </p>
+  <p>
+    <p>
+      <h3 style="text-align:center;">Education</h3>
+    </p>
+  </p>
+  <div class="container1">
+    <div class="box1" id="box1">
+      <h2>Bachelor of Technology</h2>
+      <p class="info">Computer science and Engineering from Amrita Vishwa
+        Vidyapeetham | Bengaluru, with an overall CGPA of 6.1
+        </p>
+    </div>
+    <div class="box1" id="box1">
+      <h2>XII</h2>
+      <p class="info">MPC from Sri Chaitanya junior college, Hyderabad, Telangana, with an overall 89.6%</p>
+    </div>
+    <div class="box1" id="box1">
+      <h2>X</h2>
+      <p class="info">X (2018) from St Peter’s English medium high school, Guntakal, Andhra Pradesh,with an overall GPA: 8.7</p>
+    </div>
+  </div>
+  <p>
+    <p>
+      <h3 style="text-align:center;">Skill</h3>
+    </p>
+  </p>
+  <div class="container1">
+    <div class="box1" id="box1">
+      <h2>Web Development</h2>
+      <p class="info">    <img src="html5-badge-h-solo.png" alt="Image 2" class="icon"> HTML
+      <br>    <img src="CSS3_logo_and_wordmark.jpg" alt="Image 2" class="icon"> CSS
+      <br>    <img src="JavaScript-logo.jpg" alt="Image 2" class="icon"> JavaScript
+      <br>    <img src="Screenshot 2024-02-13 072418.png" alt="Image 2" class="icon"> MySQL
+      <br>    <img src="Screenshot 2024-02-13 072653.png" alt="Image 2" class="icon"> MongoDB
+      <br></p>
+    </div>
+    <div class="box1" id="box1">
+      <h2>Machine Learning & Data Science</h2>
+      <p class="info">    <img src="Screenshot 2024-02-13 073201.png" alt="Image 2" class="icon"> Python
+        <br>    <img src="Screenshot 2024-02-13 073332.png" alt="Image 2" class="icon"> Pandas
+        <br>    <img src="Screenshot 2024-02-13 073449.png" alt="Image 2" class="icon"> Matplotlib
+        <br>    <img src="scikit-learn-logo-small.png" alt="Image 2" class="icon"> Scikit learn
+        <br>    <img src="1200px-Jupyter_logo.png" alt="Image 2" class="icon"> Jupyter notebook
+        <br>    <img src="ttht.png" alt="Image 2" class="icon"> Numpy
+        <br></p> </div>
+    <div class="box1" id="box1">
+      <h2>Languages  & others</h2>
+      <p class="info" >
+        <p class="info" >    <img src="Screenshot 2024-02-13 074141.png" alt="Image 2" class="icon"> Arduino uno
+          <br>    <img src="Visual_Studio_Code_1.35_icon.png" alt="Image 2" class="icon"> VS code
+          <br>    <img src="Screenshot 2024-02-13 074410.png" alt="Image 2" class="icon"> Rasberri pi
+          <br>    <img src="Screenshot 2024-02-13 074523.png" alt="Image 2" class="icon"> Git
+          <br>    <img src="Screenshot 2024-02-13 074700.png" alt="Image 2" class="icon"> Github
+          <br>    <img src="Screenshot 2024-02-13 074836.png" alt="Image 2" class="icon"> Java
+          <br>    <img src="Screenshot 2024-02-13 074948.png" alt="Image 2" class="icon"> C
+          <br>    <img src="Screenshot 2024-02-13 075201.png" alt="Image 2" class="icon"> C++ 
+          <br></p> </p>
+          <body>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="bgimg-2">
+  <div class="caption" id="projects">
+  <span class="border" style="		 text-align:center;
+  padding:30px 80px;
+  text-align: justify" ><b>Projects</span>
+  </div>
+</div>
+<div style="color: #000;
+     background-color:white;
+		 text-align:center;
+		 padding:30px 80px;
+		 text-align: justify;
+     font-size:30px">
+<div class="c2">
+  <div class="b2">
+    <img src="69203512-4cc9-4830-a80c-c48da42acbf6.jpg" alt="Image 1">
+    <div class="description">
+      <h2> E-Commerce Front-End Design</h2>
+      <p style="font-size:10px;" >Led a team in designing the front end of an e-commerce platform for a college project. Implemented user-friendly interfaces and intuitive navigation to enhance the shopping experience. Employed HTML, CSS, and JavaScript to create responsive designs optimized for various devices.</p>
+    </div>
+  </div>
+  <div class="b2">
+    <img src="Devimahathmyam-3-min-scaled.jpg" alt="Image 2">
+    <div class="description">
+      <h2>Optimal Character Recognition for Malayalam Palm Leaf Characters</h2>
+      <p style="font-size:10px;" >Developed a project focused on optimal character recognition for Malayalam palm leaf characters. Utilized characters extracted through deep learning techniques as input data. Implemented feature selection algorithms and classification methods to optimize character recognition accuracy. Employed Python for data preprocessing, feature selection, and model evaluation.</p>
+    </div>
+  </div>
+  <div class="b2">
+    <img src="RPM-12.png" alt="Image 3">
+    <div class="description">
+      <h2>Cloud-Based Diabetic Patient Monitoring System</h2>
+      <p style="font-size:10px;" >Designed and implemented a cloud-based system for monitoring diabetic patients remotely. Developed a web or mobile application for patients to input their health data, including blood sugar levels, medication intake, and physical activity. Utilized cloud storage and computing resources to securely store and process patient data. Implemented real-time alerts for abnormal readings, enabling timely intervention by healthcare providers. Integrated data visualization tools to provide insights into patient health trends.</p>
+    </div>
+  </div>
+</div>
+<div class="c2">
+  <div class="b2">
+    <img src="asset1.png" alt="Image 1">
+    <div class="description">
+      <h2> Understanding Sleep's Impact on Health Through Data Analysis
+
+      </h2>
+      <p style="font-size:10px;" >Analyzing sleep patterns, lifestyle factors, and health outcomes involves preprocessing data, exploring correlations, and developing ML models. Techniques like SHAP and LIME provide interpretability, visualizations present insights, and iterative refinement ensures model effectiveness. This approach offers valuable insights into the relationship between sleep and healthcare, guiding interventions and personalized recommendations.</p>
+    </div>
+  </div>
+  <div class="b2">
+    <img src="Screenshot 2024-02-13 155630.png" alt="Image 2">
+    <div class="description">
+      <h2> Customized Hair Care Management System Website</h2>
+      <p style="font-size:10px;" >Developed a dynamic website using HTML, CSS, MongoDB, and Python for a customized hair care management system. Implemented user authentication and profile management functionalities to allow users to create accounts and personalize their hair care routines. Integrated MongoDB as the database to store user preferences, hair characteristics and product recommendations. Employed responsive design techniques to ensure optimal viewing experience across various devices. Incorporated interactive features such as product recommendations, and tracking progress towards hair goals.</p>
+    </div>
+  </div>
+  <div class="b2">
+    <img src="4514172_44a0_4.jpg" alt="Image 3">
+    <div class="description">
+      <h2> Smart Inverter Control System with Blynk App Integration
+
+      </h2>
+      <p style="font-size:10px;" >Developed a smart inverter control system utilizing the ESP8266 microcontroller for transmitting data to the Blynk app. Integrated sensors to measure current and voltage levels, which are then wirelessly transmitted to the Blynk app for real-time monitoring and control. Implemented features such as data visualization, alerts, and remote control functionalities on the Blynk app interface. Enabled users to monitor power usage, adjust inverter settings, and receive notifications about power fluctuations remotely.</p>
+    </div>
+  </div>
+</div>
+<div></div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border"><b>Bye!</span>
+  </div>
+</div>
+
+<div id="contact" class="center">
+<button id="contactButton" onclick="showContactForm()"  class="info">Contact </button>
+</div>
+<div id="contactForm" style="display: none;">
+  <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br>
+  <input type="email" id="email" name="email" placeholder="Email" required><br>
+  <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea><br>
+  <button id="sendMessageButton" onclick="sendMessage()" class="info">Send</button>
+</div>
+</body>
+</html>
+
+  
+
+
+
+</html>
